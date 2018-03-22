@@ -12,27 +12,25 @@ function pauseSong() {
 
 
 $(document).ready( () => {
-
-  $('h4').addClass("play")
-
   $('h4').click(function (event){
-    // to remove active from any other <h4> that might have it, so there can't be more than one active at the same time
-  $('h4').removeClass('active')
 
     // to pause any song that is already play8ing so 2 songs dont play at once.
   if(song !== undefined) {
     pauseSong()
   }
 
-  if($(event.target).hasClass("play")) {
-    $(event.target).removeClass('play').addClass('active')
+  if($(event.target).hasClass("active") === false) {
+    $(event.target).addClass('active')
     song = $(event.target).next()[0];
+    $("h4").not(this).removeClass('active')
     playSong()
     console.log(song)
   } else {
-    $(event.target).addClass('play');
-    $(event.target).removeClass('acitve')
+    $(event.target).removeClass('active')
     pauseSong()
+
+
+
   }
 
   //to change the artist name with each click
