@@ -1,0 +1,13 @@
+#banner {
+  background-color: silver;
+  padding-left: 4px;
+}
+
+.songs{
+  padding-left: 4px;
+}
+
+#player{
+  width: 300px;
+  border: 1px solid black;
+}
