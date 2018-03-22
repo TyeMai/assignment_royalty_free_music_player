@@ -14,6 +14,8 @@ $('h4').click(function (event){
     $(event.target).toggleClass('play').next()[0].pause();
   }
 
+  $("#artistName").html($(event.target).prev().html())
+  $("#songTitle").html(event.target.innerHTML)
   console.log('hey')
 
 })
