@@ -3,8 +3,9 @@
   padding-left: 4px;
 }
 
-.songs, .controls{
+.songs{
   padding-left: 4px;
+
 }
 
 #player{
@@ -27,4 +28,18 @@ body{
 
 .active{
   color: pink;
+}
+
+.control {
+  padding-left: 4px;
+  background-color: #edf1f7;
+  text
+}
+
+button {
+  padding: 5px;
+  box-shadow: none;
+  background-color: #edf1f7 ;
+  border-width: 0;
+  outline: none;
 }
