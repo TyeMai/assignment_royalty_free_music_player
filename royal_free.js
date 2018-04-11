@@ -2,8 +2,8 @@ var song;
 var $song;
 
 function playSong() {
-  song.play().then()
-  console.log(.then)
+  song.play()
+  //console.log(.then)
 };
 
 function pauseSong() {
