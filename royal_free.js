@@ -2,7 +2,8 @@ var song;
 var $song;
 
 function playSong() {
-  song.play()
+  song.play().then()
+  console.log(.then)
 };
 
 function pauseSong() {
@@ -21,7 +22,6 @@ $(document).ready( () => {
       song = $(event.target).next()[0];
       $("h4").not(this).removeClass('active')
       playSong()
-      console.log(song)
     } else { //for
       $(event.target).removeClass('active')
       pauseSong()
@@ -49,7 +49,7 @@ $(document).ready( () => {
     $song = $(song)
     song = $songList.eq($songList.index($song) - 1)[0]
     playSong()
-  })
+  });
 
   $('#forward').click(function() {
     pauseSong()
@@ -61,9 +61,9 @@ $(document).ready( () => {
     song = $songList.eq($songList.index($song) + 1)[0]
     }
     playSong()
-  })
+  });
 
-  //$('button').css("background-color", "#edf1f7")
+
 
 
 
